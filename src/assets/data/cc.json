@@ -1,0 +1,26 @@
+{
+  "title": "",
+  "data": [
+    {
+      "country_en": "Argnetina",
+      "country_es": "Argentina",
+      "country_code": "ARG",
+      "a1996": 1.25,
+      "a2017": 1.50
+    },
+    {
+      "country_en": "Peru",
+      "country_es": "Perú",
+      "country_code": "PER",
+      "a1996": -0.6,
+      "a2017": 0.1
+    },
+    {
+      "country_en": "Mexico",
+      "country_es": "México",
+      "country_code": "MEX",
+      "a1996": -1.25,
+      "a2017": 1.10
+    }
+  ]
+}

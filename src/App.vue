@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <Interactive title="Control gubernamental de la corrupción"
+                     caption="Con algunas excepciones, la mayoría de los países de ALC han empeorado su control de la corrupción."
+                     source="Fuente: WGI, 2017">
+        </Interactive>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    /* eslint-disable no-console */
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    import Interactive from './components/Interactive.vue'
+
+    export default {
+        name: 'app',
+        components: {
+            Interactive
+        },
+        data: function () {
+            return {
+
+            }
+        },
+        mounted: function () {
+            console.log("App mounted");
+        },
+    }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext');
+    @import '~bulma/bulma';
+
+    #app {
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #2c3e50;
+    }
 </style>
